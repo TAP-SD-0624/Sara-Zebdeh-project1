@@ -14,8 +14,10 @@ main {
   border: 1px solid white;
   background-color: white;
   overflow: hidden;
-  transform: translateY(50rem);
-  transform: translateX(30rem);
+  right: 12rem;
+  bottom: 3rem;
+  /* transform: translateY(50rem);
+  transform: translateX(30rem); */
 
   box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
     0 10px 10px var(--lines-color) (0, 0, 0, 0.05);

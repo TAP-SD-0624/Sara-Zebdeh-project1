@@ -3,6 +3,7 @@ h2 {
   font-size: 1.9rem;
   color: var(--brand-secondary);
 }
+
 h3 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -10,7 +11,6 @@ h3 {
 }
 
 p {
-  padding-top: 15px;
   font-weight: 400;
   font-size: 1rem;
 }

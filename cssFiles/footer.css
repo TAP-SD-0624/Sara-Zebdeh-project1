@@ -9,6 +9,7 @@ footer {
   align-items: center;
   display: flex;
 }
+
 .footer-div p {
   background-color: var(--bg_body);
 }
