@@ -1,0 +1,19 @@
+footer {
+  background-color: var(--bg_body);
+  padding: 16px 32px;
+}
+
+.footer-div {
+  background-color: var(--bg_body);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.footer-div p {
+  background-color: var(--bg_body);
+}
+
+.heart {
+  background-color: var(--bg_body);
+  color: var(--heart-color);
+}

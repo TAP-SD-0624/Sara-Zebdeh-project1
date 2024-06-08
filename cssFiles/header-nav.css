@@ -1,0 +1,29 @@
+header {
+  padding-block: 1rem;
+}
+
+.nav {
+  padding: 16px;
+}
+
+.mood-btn {
+  border: 1px solid var(--lines-color);
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.8px;
+  color: var(--body-text);
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

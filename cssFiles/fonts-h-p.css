@@ -1,0 +1,16 @@
+h2 {
+  font-weight: 800;
+  font-size: 1.9rem;
+  color: var(--brand-secondary);
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--body-text);
+}
+
+p {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+}

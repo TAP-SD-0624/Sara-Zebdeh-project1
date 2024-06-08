@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="variables.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./cssFiles//variables.css" />
+    <link rel="stylesheet" href="./cssFiles//fonts-h-p.css" />
+    <link rel="stylesheet" href="./cssFiles//general.css" />
+    <link rel="stylesheet" href="./cssFiles//header-nav.css" />
+    <link rel="stylesheet" href="./cssFiles/header-trianglesAndWelcome.css" />
+    <link rel="stylesheet" href="/cssFiles///homePage.css" />
+    <link rel="stylesheet" href="./cssFiles//footer.css" />
+    <link rel="stylesheet" href="./cssFiles//@media-screes.css" />
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+
+  <body class="light-mode">
+    <header class="header">
+      <div class="flex above nav">
+        <h3 class="nav-h3">Web Topics</h3>
+
+        <div class="flex gab">
+          <button class="mood-btn gab" id="colorThemeBtn">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span id="mode_btn_text" class="btn">Dark Mode</span>
+          </button>
+
+          <button class="mood-btn gab" id="favourites-click-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="btn">Favourites</span>
+          </button>
+        </div>
+      </div>
+      <div class="two-triangles-box">
+        <div class="triangle"></div>
+        <div class="triangle1"></div>
+      </div>
+      <div class="welcome-box">
+        <div>
+          <h2>Welcome to our website!</h2>
+          <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex ssf">
+        <div class="flex gab search-box">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            class="search"
+            name="search"
+            type="text"
+            placeholder="Search the website..."
+          />
+        </div>
+
+        <div class="flex selectors-box">
+          <div class="select">
+            <label class="label" for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+              <option value="default">Default</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <label class="label" for="filter">Filter by:</label>
+            <select name="filter" id="filter">
+              <option value="default">Default</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="nums-topic-found-h2">"24" Web Topics Found</h2>
+
+      <div class="topics-container">
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/html.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Languages</p>
+            <h3>HTML</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Sarah Smith</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/css.webp" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Languages</p>
+            <h3>CSS</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: David Lee</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/javascript.jpg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Languages</p>
+            <h3>JavaScript</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Emily Chen</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/jquery.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Frontend Frameworks and Libraries</p>
+            <h3>jQuery</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: John Johnson</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/angular.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Frontend Frameworks and Libraries</p>
+            <h3>Angular</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Jessica Davis</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/react.webp" alt="html" />
+          </div>
+          <div class="information">
+            <p>Frontend Frameworks and Libraries</p>
+            <h3>React</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Daniel Brown</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/vuejs.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Frontend Frameworks and Libraries</p>
+            <h3>Vue.js</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Ava Jones</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/nodejs.webp" alt="html" />
+          </div>
+          <div class="information">
+            <p>Backend Frameworks and Libraries</p>
+            <h3>Node.js</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Michael Kim</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/expressjs.webp" alt="html" />
+          </div>
+          <div class="information">
+            <p>Backend Frameworks and Libraries</p>
+            <h3>Express.js</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Sophia Rodriguez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/ruby.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Backend Frameworks and Libraries</p>
+            <h3>Ruby on Rails</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon name="star-outline"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: William Lee</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/django.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Backend Frameworks and Libraries</p>
+            <h3>Django</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Olivia Martinez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/flask.webp" alt="html" />
+          </div>
+          <div class="information">
+            <p>Backend Frameworks and Libraries</p>
+            <h3>Flask</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Ethan Thompson</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/sql.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Databases and APIs</p>
+            <h3>SQL</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Madison Davis</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/nosql.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Databases and APIs</p>
+            <h3>NoSQL</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+            </ul>
+            <p class="auther-p">Auther: Isabella Wilson</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/restapi.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Databases and APIs</p>
+            <h3>REST APIs</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Jacob Garcia</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/graphql.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Databases and APIs</p>
+            <h3>GraphQL</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Mia Brown</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/oauth.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>OAuth</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Evelyn Nguyen</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/json.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>JSON</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Liam Hernandez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/ajax.gif" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>AJAX</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Avery Perez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/websockets.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Websockets</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Victoria Kim</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/responsive.gif" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Responsive Design</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Ryan Jones</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/accessibility.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Accessibility</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Samantha Martin</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/ux.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>User Experience (UX)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Luke Davis</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/ui.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>User Interface (UI)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Grace Wilson</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/design-systems.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Design Systems</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Noah Martinez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/performance.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Performance Optimization</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Chloe Taylor</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/cross-browser.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Cross-Browser Compatibility</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+            </ul>
+            <p class="auther-p">Auther: David Lee</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/seo.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Search Engine Optimization (SEO)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Emily Kim</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/web-security.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Web Security</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Gabriel Hernandez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/testing.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Testing and Debugging</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star-half"></ion-icon></li>
+            </ul>
+            <p class="auther-p">Auther: Avery Perez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/ci-cd.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Continuous Integration/Continuous Deployment (CI/CD)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Madison Davis</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/devops.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>DevOps</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Isabella Wilson</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/cloud.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Cloud Computing</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Jacob Garcia</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/docker.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+
+            <h3>Docker</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Mia Brown</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/microservices.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Microservices</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Evelyn Nguyen</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/pwa.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Progressive Web Apps (PWA)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Liam Hernandez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/wai.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Web Accessibility Initiative (WAI)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Avery Perez</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/cms.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Content Management Systems (CMS)</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Victoria Kim</p>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/analytics.png" alt="html" />
+          </div>
+          <div class="information">
+            <p>Web Development Concepts and Technologies</p>
+            <h3>Web Analytics</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+            <p class="auther-p">Auther: Ryan Jones</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="favourites">
+      <p class="favourites-p">My Favourite Topics</p>
+      <div class="favourites-div">
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/react.webp" alt="html" />
+          </div>
+          <div class="information">
+            <h3>React</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-img">
+            <img src="./assets/cloud.jpeg" alt="html" />
+          </div>
+          <div class="information">
+            <h3>Cloud Computing</h3>
+            <ul>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li><ion-icon class="checked" name="star"></ion-icon></li>
+              <li>
+                <ion-icon class="star-outline" name="star-outline"></ion-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-div gab">
+        <p>Developed with</p>
+        <ion-icon class="heart" name="heart"></ion-icon>
+        <p>&copy; 2023</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
