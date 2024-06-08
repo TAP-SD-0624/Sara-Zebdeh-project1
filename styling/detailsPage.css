@@ -4,21 +4,22 @@ main {
   gap: 1rem;
 }
 
+.relative-container {
+  position: relative;
+  min-width: 250px;
+}
+
 .topic {
   position: absolute;
+
   box-sizing: border-box;
   overflow: auto;
-  float: left;
+  /* float: left; */
   text-align: left;
   cursor: pointer;
   border: 1px solid white;
   background-color: white;
   overflow: hidden;
-  right: 12rem;
-  bottom: 3rem;
-  /* transform: translateY(50rem);
-  transform: translateX(30rem); */
-
   box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
     0 10px 10px var(--lines-color) (0, 0, 0, 0.05);
 }
@@ -69,15 +70,35 @@ ul {
   justify-content: center;
   background-color: var(--bg_body);
 }
-.details {
-  height: 40vh;
-  width: 100%;
+
+.sub-topics-container {
+  background-color: var(--bg_body);
+}
+
+.details,
+.sub-topics-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Center horizontally and vertically */
+  padding-block: 24px;
+  gap: 2rem;
+}
+
+.sub-topics-container .relative-container {
+  background-color: transparent;
+}
+
+.details {
+  /* height: 40vh; */
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* padding-left: 15vw; */
   background-color: #333333;
   gap: 1rem;
+  position: relative;
 }
+
 h4 {
   color: var(--brand-secondary);
   background-color: #333333;
@@ -95,10 +116,18 @@ h4 {
   color: white;
   background-color: #333333;
 }
+
+.details-div,
+.sub-topics-div {
+  max-width: 535px;
+}
+
 .details-div {
   background-color: #333333;
-  padding: 16px;
-  width: 40%;
+  max-width: 535px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .p-h5-a-div {
@@ -170,9 +199,9 @@ h4 {
 }
 
 .sub-topics-div {
-  margin-top: 1.5rem;
-  margin-left: 30rem;
-  max-width: 25%;
+  /* margin-top: 1.5rem;
+  margin-left: 30rem; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,7 +210,7 @@ h4 {
   border: 1px solid var(--lines-color);
 }
 
-.sub-topic-div {
+.sub-topic {
   padding: 15px;
   width: 100%;
   border-bottom: 1px solid var(--lines-color);

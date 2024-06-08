@@ -1,0 +1,47 @@
+.two-triangles-box {
+  position: relative;
+  max-height: 120px;
+}
+
+.triangle1,
+.triangle2 {
+  width: 100%;
+  min-height: 60px;
+}
+
+.triangle1 {
+  clip-path: polygon(0 0, 0 80%, 100% 0);
+  position: relative;
+  left: 0;
+  top: -3.8rem;
+  background: rgb(7, 104, 172);
+  background: linear-gradient(
+    90deg,
+    var(--brand-primary) 0%,
+    var(--brand-secondary) 100%
+  );
+}
+
+.triangle2 {
+  z-index: -1;
+  top: 0;
+  background-color: var(--brand-secondary);
+  clip-path: polygon(0 0, 100% 80%, 100% 0);
+}
+
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-4.5rem);
+  background-color: transparent;
+}
+
+.welcome-box * {
+  background-color: transparent;
+}
+
+.welcome-box h2 {
+  text-align: left;
+}

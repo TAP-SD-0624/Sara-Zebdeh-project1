@@ -1,12 +1,9 @@
-header {
-  padding-block: 1rem;
-}
-
 .nav {
-  padding: 16px;
+  padding: 16px 48px;
 }
 
-.mode-btn, .favourites-btn {
+.mode-btn,
+.favourites-btn {
   border: 1px solid var(--lines-color);
   border-radius: 0.3rem;
   display: flex;
