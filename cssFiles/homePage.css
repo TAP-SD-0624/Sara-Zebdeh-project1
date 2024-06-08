@@ -40,7 +40,7 @@ main {
   border-top-right-radius: 1rem;
 }
 
-.information {
+.information-for-topic {
   padding: 16px;
 }
 
@@ -80,7 +80,7 @@ select {
   outline: none;
 }
 
-.ssf {
+.search-sort-filter-box {
   border: 1px solid var(--lines-color);
   border-radius: 0.5rem;
   background-color: var(--bg_default);
@@ -98,7 +98,7 @@ li {
   padding-top: 32px;
 }
 
-.checked,
+.star-filled,
 .star-outline {
   color: #ff9f43;
 }

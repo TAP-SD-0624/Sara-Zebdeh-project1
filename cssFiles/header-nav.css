@@ -6,7 +6,7 @@ header {
   padding: 16px;
 }
 
-.mood-btn {
+.mode-btn, .favourites-btn {
   border: 1px solid var(--lines-color);
   border-radius: 0.3rem;
   display: flex;
