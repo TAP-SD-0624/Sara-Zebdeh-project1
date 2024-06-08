@@ -214,9 +214,10 @@ h4 {
   padding: 15px;
   width: 100%;
   border-bottom: 1px solid var(--lines-color);
+  border-radius: 8px;
 }
 
-.sub-topic-div span {
+.sub-topic span {
   color: var(--body-text);
 }
 
