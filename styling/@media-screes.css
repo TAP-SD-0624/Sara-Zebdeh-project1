@@ -20,6 +20,10 @@
   .select {
     width: 100%;
   }
+/* 
+  .welcome-box {
+    transform: translateY(-3.5rem);
+  } */
 }
 
 @media screen and (max-width: 450px) {

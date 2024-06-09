@@ -22,7 +22,4 @@ colorThemeBtn.addEventListener("click", () => {
 
 favoriteBtn.addEventListener("click", () => {
   favouritesDiv.classList.toggle("show");
-  if (favouritesDiv.classList.contains("show")) {
-    favouritesDiv.scrollIntoView({ behavior: "smooth" });
-  }
 });
