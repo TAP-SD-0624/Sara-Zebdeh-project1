@@ -4,7 +4,7 @@ const colorThemeBtn = document.getElementById("colorThemeBtn");
 const favoriteBtn = document.getElementById("favourites-click-btn");
 const favouritesDiv = document.querySelector(".favourites");
 
-const moodText = document.getElementById("mode_btn_text");
+const modeText = document.getElementById("mode_btn_text");
 
 colorThemeBtn.addEventListener("click", () => {
   body.classList.contains("dark")
@@ -13,9 +13,11 @@ colorThemeBtn.addEventListener("click", () => {
 });
 
 colorThemeBtn.addEventListener("click", () => {
-  body.classList.contains("dark")
-    ? (moodText.innerHTML = "Light Mode")
-    : (moodText.innerHTML = "Dark Mode");
+  if (modeText.innerText === "Dark Mode") {
+    modeText.innerText = "Light Mode";
+  } else {
+    modeText.innerText = "Dark Mode";
+  }
 });
 
 favoriteBtn.addEventListener("click", () => {

@@ -10,7 +10,7 @@
 }
 
 .triangle1 {
-  clip-path: polygon(0 0, 0 80%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 80% 0);
   position: relative;
   left: 0;
   top: -3.8rem;
@@ -26,7 +26,7 @@
   z-index: -1;
   top: 0;
   background-color: var(--brand-secondary);
-  clip-path: polygon(0 0, 100% 80%, 100% 0);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .welcome-box {
