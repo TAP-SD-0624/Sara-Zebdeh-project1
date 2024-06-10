@@ -20,163 +20,172 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
 
-  <body class="light-mode">
-    <header class="header">
-      <div class="flex nav">
-        <h3 class="nav-h3">Web Topics</h3>
+  <body class="light-mode container">
+    <div class="header-body-section">
+      <header class="header">
+        <div class="flex nav">
+          <h3 class="nav-h3">Web Topics</h3>
 
-        <div class="flex gab">
-          <button class="mode-btn gab" id="colorThemeBtn">
-            <ion-icon name="moon-outline"></ion-icon>
-            <span id="mode_btn_text" class="btn">Dark Mode</span>
-          </button>
+          <div class="flex gab">
+            <button class="mode-btn gab" id="colorThemeBtn">
+              <ion-icon name="moon-outline"></ion-icon>
+              <span id="mode_btn_text" class="btn">Dark Mode</span>
+            </button>
 
-          <button class="favourites-btn gab">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="btn">Favourites</span>
-          </button>
-        </div>
-      </div>
-      <div class="two-triangles-box">
-        <div class="triangle2"></div>
-        <div class="triangle1"></div>
-        <div class="welcome-box">
-          <div>
-            <h2>Welcome to our website!</h2>
-            <p>We have a new design that's fresh, modern, and easy to use.</p>
+            <button class="favourites-btn gab">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="btn">Favourites</span>
+            </button>
           </div>
         </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="main-div">
-        <div class="details">
-          <div class="details-div">
+        <div class="two-triangles-box">
+          <div class="triangle2"></div>
+          <div class="triangle1"></div>
+          <div class="welcome-box">
             <div>
-              <h4>Web Development Languages</h4>
-              <h3 class="details-h3">HTML</h3>
-              <ul class="details-ul">
-                <li><ion-icon class="star-filled" name="star"></ion-icon></li>
-                <li><ion-icon class="star-filled" name="star"></ion-icon></li>
-                <li><ion-icon class="star-filled" name="star"></ion-icon></li>
-                <li><ion-icon class="star-filled" name="star"></ion-icon></li>
-                <li>
-                  <ion-icon class="star-outline" name="star-outline"></ion-icon>
-                </li>
-              </ul>
+              <h2>Welcome to our website!</h2>
+              <p>We have a new design that's fresh, modern, and easy to use.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-div">
+          <div class="details">
+            <div class="details-div">
+              <div>
+                <h4>Web Development Languages</h4>
+                <h3 class="details-h3">HTML</h3>
+                <ul class="details-ul">
+                  <li><ion-icon class="star-filled" name="star"></ion-icon></li>
+                  <li><ion-icon class="star-filled" name="star"></ion-icon></li>
+                  <li><ion-icon class="star-filled" name="star"></ion-icon></li>
+                  <li><ion-icon class="star-filled" name="star"></ion-icon></li>
+                  <li>
+                    <ion-icon
+                      class="star-outline"
+                      name="star-outline"
+                    ></ion-icon>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="details-p">
+                HTML (Hypertext Markup Language) is the standard markup language
+                for creating web pages and other information that can be
+                displayed in a web browser. It provides a structure for content
+                and defines how it should be displayed on a web page, including
+                text, images, and multimedia. HTML is essential for creating
+                static web pages and is a foundational technology for the World
+                Wide Web.
+              </p>
             </div>
 
-            <p class="details-p">
-              HTML (Hypertext Markup Language) is the standard markup language
-              for creating web pages and other information that can be displayed
-              in a web browser. It provides a structure for content and defines
-              how it should be displayed on a web page, including text, images,
-              and multimedia. HTML is essential for creating static web pages
-              and is a foundational technology for the World Wide Web.
-            </p>
-          </div>
-
-          <div class="relative-container">
-            <div class="topic">
-              <div class="topic-img">
-                <img src="./assets/javascript.jpg" alt="html" />
-              </div>
-              <div class="favourite-information-div">
-                <div class="p-h5-a-div gab">
-                  <h5>HTML</h5>
-                  by <a href="#">Sara Smith</a>
+            <div class="relative-container">
+              <div class="topic">
+                <div class="topic-img">
+                  <img src="./assets/javascript.jpg" alt="html" />
                 </div>
-                <div class="favourite-div">
-                  <p>Interested about this topic?</p>
-                  <div class="flex add-to-favourite-div">
-                    <button class="flex gab btn" id="add-to-favourite-btn">
-                      <span class="add-span">Add to Favourites</span>
-                      <ion-icon
-                        class="fav-icon"
-                        name="heart-outline"
-                      ></ion-icon>
-                    </button>
+                <div class="favourite-information-div">
+                  <div class="p-h5-a-div gab">
+                    <h5>HTML</h5>
+                    by <a href="#">Sara Smith</a>
                   </div>
-                  <p class="add-to-favourite-bottom">Unlimited Credits</p>
+                  <div class="favourite-div">
+                    <p>Interested about this topic?</p>
+                    <div class="flex add-to-favourite-div">
+                      <button class="flex gab btn" id="add-to-favourite-btn">
+                        <span class="add-span">Add to Favourites</span>
+                        <ion-icon
+                          class="fav-icon"
+                          name="heart-outline"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                    <p class="add-to-favourite-bottom">Unlimited Credits</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="sub-topics-container">
-          <div class="sub-topics-div">
-            <div class="sub-topic">
-              <h4 class="sub-topics-h4">HTML Sub Topics</h4>
-            </div>
+          <div class="sub-topics-container">
+            <div class="sub-topics-div">
+              <div class="sub-topic">
+                <h4 class="sub-topics-h4">HTML Sub Topics</h4>
+              </div>
 
-            <div class="sub-topic">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML syntax and structure</span>
-              </button>
+              <div class="sub-topic">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML syntax and structure</span>
+                </button>
+              </div>
+              <div class="sub-topic">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML elements and attributes</span>
+                </button>
+              </div>
+              <div class="sub-topic">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML forms and input elements</span>
+                </button>
+              </div>
+              <div class="sub-topic">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML tables and lists</span>
+                </button>
+              </div>
+              <div class="sub-topic">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML multimedia elements (audio, video, images)</span>
+                </button>
+              </div>
+              <div class="sub-topic-last-div">
+                <button class="flex gab btn">
+                  <ion-icon
+                    class="check-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span>HTML accessibility and semantic markup</span>
+                </button>
+              </div>
             </div>
-            <div class="sub-topic">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML elements and attributes</span>
-              </button>
-            </div>
-            <div class="sub-topic">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML forms and input elements</span>
-              </button>
-            </div>
-            <div class="sub-topic">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML tables and lists</span>
-              </button>
-            </div>
-            <div class="sub-topic">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML multimedia elements (audio, video, images)</span>
-              </button>
-            </div>
-            <div class="sub-topic-last-div">
-              <button class="flex gab btn">
-                <ion-icon
-                  class="check-icon"
-                  name="checkmark-circle-outline"
-                ></ion-icon>
-                <span>HTML accessibility and semantic markup</span>
-              </button>
-            </div>
+            <div class="relative-container"></div>
           </div>
-          <div class="relative-container"></div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-div gab">
-        <p>Developed with</p>
-        <ion-icon class="heart-icon" name="heart"></ion-icon>
-        <p>&copy; 2023</p>
-      </div>
-    </footer>
+      </main>
+    </div>
+
+    <div class="footer-section">
+      <footer>
+        <div class="footer-div gab">
+          <p>Developed with</p>
+          <ion-icon class="heart-icon" name="heart"></ion-icon>
+          <p>&copy; 2023</p>
+        </div>
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
