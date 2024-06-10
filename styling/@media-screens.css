@@ -20,10 +20,10 @@
   .select {
     width: 100%;
   }
-/* 
+
   .welcome-box {
-    transform: translateY(-3.5rem);
-  } */
+    transform: translateY(-0.8rem);
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -51,7 +51,7 @@
   }
 
   .welcome-box {
-    transform: translateY(-2.8rem);
+    transform: translateY(-1.8rem);
   }
 
   h2 {
@@ -95,5 +95,61 @@
 
   .topic {
     position: static;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .welcome-box {
+    transform: translateY(-0.4rem);
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .welcome-box {
+    transform: translateY(-0.09rem);
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .welcome-box {
+    transform: translateY(-0.09rem);
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .welcome-box {
+    transform: translateY(-0.05rem);
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.7rem;
   }
 }
