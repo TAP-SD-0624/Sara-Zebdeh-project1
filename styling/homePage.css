@@ -49,11 +49,6 @@ main {
   height: 100%;
 }
 
-.favourites-btn,
-.mode-btn {
-  cursor: pointer;
-}
-
 .select {
   display: flex;
   flex-direction: column;
