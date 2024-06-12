@@ -25,3 +25,19 @@
   flex-direction: column;
   justify-content: center;
 }
+
+#heart-icon-btn {
+  color: var(--body-text);
+}
+
+#heart-icon-btn.clicked {
+  color: #dc143c; 
+}
+
+#mode-icon-btn {
+  color: var(--body-text);
+}
+
+#mode-icon-btn.clicked {
+  color: #c2d055; 
+}
