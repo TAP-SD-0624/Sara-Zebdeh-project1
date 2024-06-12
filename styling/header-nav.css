@@ -5,7 +5,7 @@
 .mode-btn,
 .favourites-btn {
   border: 1px solid var(--lines-color);
-  border-radius: 0.3rem;
+  border-radius: 4.8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,18 @@
   justify-content: center;
 }
 
+#heart-icon-btn,
+#mode-icon-btn {
+  width: 13px;
+  height: 13px;
+}
+
 #heart-icon-btn {
   color: var(--body-text);
 }
 
 #heart-icon-btn.clicked {
-  color: #dc143c; 
+  color: #dc143c;
 }
 
 #mode-icon-btn {
@@ -39,5 +45,5 @@
 }
 
 #mode-icon-btn.clicked {
-  color: #c2d055; 
+  color: #c2d055;
 }

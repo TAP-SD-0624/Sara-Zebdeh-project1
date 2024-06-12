@@ -26,10 +26,10 @@ favoriteBtn.addEventListener("click", () => {
   favouritesDiv.classList.toggle("show");
 });
 
-favoriteBtn.addEventListener('click', function() {
-  heartColor.classList.toggle('clicked');
+favoriteBtn.addEventListener("click", function () {
+  heartColor.classList.toggle("clicked");
 });
 
-colorThemeBtn.addEventListener('click', function() {
-  modeColor.classList.toggle('clicked');
+colorThemeBtn.addEventListener("click", function () {
+  modeColor.classList.toggle("clicked");
 });

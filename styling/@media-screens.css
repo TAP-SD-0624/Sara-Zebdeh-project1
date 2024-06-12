@@ -8,7 +8,7 @@
   }
 
   .search-box {
-    margin: 0.5rem;
+    margin: 8px;
     align-self: flex-start;
   }
 
@@ -22,7 +22,7 @@
   }
 
   .welcome-box {
-    transform: translateY(-0.8rem);
+    transform: translateY(-12.8px);
   }
 }
 
@@ -47,11 +47,11 @@
   }
 
   .triangle1 {
-    top: -2.5rem;
+    top: -40px;
   }
 
   .welcome-box {
-    transform: translateY(-1.8rem);
+    transform: translateY(-28.8px);
   }
 
   h2 {
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 580px) {
   .welcome-box {
-    transform: translateY(-0.4rem);
+    transform: translateY(-6.4px);
   }
 
   h2 {
@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 434px) {
   .welcome-box {
-    transform: translateY(-0.09rem);
+    transform: translateY(-1.44px);
   }
 
   h2 {
@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 370px) {
   .welcome-box {
-    transform: translateY(-0.09rem);
+    transform: translateY(-1.44px);
   }
 
   h2 {
@@ -142,7 +142,7 @@
 
 @media screen and (max-width: 354px) {
   .welcome-box {
-    transform: translateY(-0.05rem);
+    transform: translateY(-0.8px);
   }
 
   h2 {
