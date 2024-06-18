@@ -22,7 +22,28 @@
   }
 
   .welcome-box {
-    transform: translateY(-12.8px);
+    transform: translateY(-9px);
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.8rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  #sort,
+  #filter {
+    font-size: 0.85rem;
   }
 }
 
@@ -96,33 +117,84 @@
   .topic {
     position: static;
   }
+
+  .welcome-box {
+    transform: translateY(-6.2px);
+  }
+
+  h2 {
+    font-size: 1.12rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.8rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  #sort,
+  #filter {
+    font-size: 0.85rem;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .welcome-box {
-    transform: translateY(-6.4px);
+    transform: translateY(-5px);
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   p {
+    font-size: 0.8rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.7rem;
+  }
+
+  .label {
+    font-size: 0.65rem;
+  }
+
+  #sort,
+  #filter {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 434px) {
   .welcome-box {
-    transform: translateY(-1.44px);
+    transform: translateY(-3px);
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.63rem;
+  }
+
+  .label {
+    font-size: 0.6rem;
+  }
+
+  #sort,
+  #filter {
+    font-size: 0.75rem;
   }
 }
 
@@ -132,24 +204,50 @@
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.7rem;
+  }
+
+  .label {
+    font-size: 0.5rem;
+  }
+
+  #sort,
+  #filter {
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 354px) {
   .welcome-box {
-    transform: translateY(-0.8px);
+    transform: translateY(-3px);
   }
 
   h2 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  .search-sort-filter-box .search-box input {
+    font-size: 0.6rem;
+  }
+
+  .label {
+    font-size: 0.45rem;
+  }
+
+  #sort,
+  #filter {
+    font-size: 0.6rem;
   }
 }
