@@ -177,11 +177,12 @@
 @media screen and (max-width: 495px) {
   .details-div,
   .sub-topics-div {
-    max-width: 150px;
+    max-width: auto;
   }
 }
 
 @media screen and (max-width: 580px) {
+  
   .welcome-box {
     transform: translateY(-5px);
   }
