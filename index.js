@@ -86,58 +86,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const favouritesData = [
-      {
-          topic: "React",
-          image: "./assets/react.webp",
-          rating: 4
-      },
-      {
-          topic: "Cloud Computing",
-          image: "./assets/cloud.jpeg",
-          rating: 4
-      }
+    {
+      topic: "React",
+      image: "./assets/react.webp",
+      rating: 4,
+    },
+    {
+      topic: "Cloud Computing",
+      image: "./assets/cloud.jpeg",
+      rating: 4,
+    },
   ];
 
-  const favouritesDiv = document.querySelector('.favourites-div');
+  const favouritesDiv = document.querySelector(".favourites-div");
 
-  favouritesData.forEach(item => {
-      const topicDiv = document.createElement('div');
-      topicDiv.classList.add('topic');
+  favouritesData.forEach((item) => {
+    const topic_div = document.createElement("div");
+    topic_div.classList.add("topic");
 
-      const topicImgDiv = document.createElement('div');
-      topicImgDiv.classList.add('topic-img', 'favourites-topic-img');
+    const topic_img_div = document.createElement("div");
+    topic_img_div.classList.add("topic-img", "favourites-topic-img");
 
-      const imgElement = document.createElement('img');
-      imgElement.src = item.image;
-      imgElement.alt = item.topic;
+    const imgElement = document.createElement("img");
+    imgElement.src = item.image;
+    imgElement.alt = item.topic;
 
-      topicImgDiv.appendChild(imgElement);
+    topic_img_div.appendChild(imgElement);
 
-      const infoDiv = document.createElement('div');
-      infoDiv.classList.add('information-for-topic');
+    const info_div = document.createElement("div");
+    info_div.classList.add("information-for-topic");
 
-      const h3Element = document.createElement('h3');
-      h3Element.textContent = item.topic;
+    const h3Element = document.createElement("h3");
+    h3Element.textContent = item.topic;
 
-      const ul = document.createElement('ul');
-      for (let i = 0; i < 5; i++) {
-          const li = document.createElement('li');
-          const icon = document.createElement('ion-icon');
-          icon.setAttribute('class', i < item.rating ? 'star-filled' : 'star-outline');
-          icon.setAttribute('name', i < item.rating ? 'star' : 'star-outline');
-          li.appendChild(icon);
-          ul.appendChild(li);
-      }
+    const ul = document.createElement("ul");
+    for (let i = 0; i < 5; i++) {
+      const li = document.createElement("li");
+      const icon = document.createElement("ion-icon");
+      icon.setAttribute(
+        "class",
+        i < item.rating ? "star-filled" : "star-outline"
+      );
+      icon.setAttribute("name", i < item.rating ? "star" : "star-outline");
+      li.appendChild(icon);
+      ul.appendChild(li);
+    }
 
-      infoDiv.appendChild(h3Element);
-      infoDiv.appendChild(ul);
+    info_div.appendChild(h3Element);
+    info_div.appendChild(ul);
 
-      topicDiv.appendChild(topicImgDiv);
-      topicDiv.appendChild(infoDiv);
+    topic_div.appendChild(topic_img_div);
+    topic_div.appendChild(info_div);
 
-      favouritesDiv.appendChild(topicDiv);
+    favouritesDiv.appendChild(topic_div);
   });
 });
-
