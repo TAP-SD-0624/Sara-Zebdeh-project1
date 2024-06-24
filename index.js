@@ -57,15 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const topic_h3 = document.createElement("h3");
         topic_h3.textContent = cardData.topic;
-        
+
         const stars_ul = document.createElement("ul");
-        cardData.stars.forEach(star => {
-        const star_li = document.createElement('li');
-        const icon = document.createElement('ion-icon');
-        icon.setAttribute('class', star.class);
-        icon.setAttribute('name', star.name);
-        star_li.appendChild(icon);
-        stars_ul.appendChild(star_li);
+        cardData.stars.forEach((star) => {
+          const star_li = document.createElement("li");
+          const icon = document.createElement("ion-icon");
+          icon.setAttribute("class", star.class);
+          icon.setAttribute("name", star.name);
+          star_li.appendChild(icon);
+          stars_ul.appendChild(star_li);
         });
 
         const topic_auther_p = document.createElement("p");
@@ -85,3 +85,59 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const favouritesData = [
+      {
+          topic: "React",
+          image: "./assets/react.webp",
+          rating: 4
+      },
+      {
+          topic: "Cloud Computing",
+          image: "./assets/cloud.jpeg",
+          rating: 4
+      }
+  ];
+
+  const favouritesDiv = document.querySelector('.favourites-div');
+
+  favouritesData.forEach(item => {
+      const topicDiv = document.createElement('div');
+      topicDiv.classList.add('topic');
+
+      const topicImgDiv = document.createElement('div');
+      topicImgDiv.classList.add('topic-img', 'favourites-topic-img');
+
+      const imgElement = document.createElement('img');
+      imgElement.src = item.image;
+      imgElement.alt = item.topic;
+
+      topicImgDiv.appendChild(imgElement);
+
+      const infoDiv = document.createElement('div');
+      infoDiv.classList.add('information-for-topic');
+
+      const h3Element = document.createElement('h3');
+      h3Element.textContent = item.topic;
+
+      const ul = document.createElement('ul');
+      for (let i = 0; i < 5; i++) {
+          const li = document.createElement('li');
+          const icon = document.createElement('ion-icon');
+          icon.setAttribute('class', i < item.rating ? 'star-filled' : 'star-outline');
+          icon.setAttribute('name', i < item.rating ? 'star' : 'star-outline');
+          li.appendChild(icon);
+          ul.appendChild(li);
+      }
+
+      infoDiv.appendChild(h3Element);
+      infoDiv.appendChild(ul);
+
+      topicDiv.appendChild(topicImgDiv);
+      topicDiv.appendChild(infoDiv);
+
+      favouritesDiv.appendChild(topicDiv);
+  });
+});
+
