@@ -81,6 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
         card.appendChild(imgCard);
         card.appendChild(information_div);
 
+        // Add click event listener to open details page
+        card.addEventListener("click", () => {
+          window.location.href = `detailsPage.html?id=${cardData.id}`;
+        });
+
         cardsContainer.appendChild(card);
       });
     });
@@ -130,4 +135,120 @@ document.addEventListener("DOMContentLoaded", () => {
         favouritesDiv.appendChild(topic_div);
       });
     });
+});
+
+let selectedCardId;
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedCardId = urlParams.get("id");
+  console.log(selectedCardId);
+  if (selectedCardId) {
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const cardData = data.find((card) => card.id == selectedCardId);
+        console.log(cardData);
+        if (cardData) {
+          const details = document.querySelector(".details");
+          const details_div = document.createElement("div");
+          details_div.classList.add("details-div");
+          const div = document.createElement("div");
+
+          const h4 = document.createElement("h4");
+          h4.textContent = cardData.category;
+          const details_h3 = document.createElement("h3");
+          details_h3.classList.add("details-h3");
+          details_h3.textContent = cardData.topic;
+
+          const stars_ul = document.createElement("ul");
+          stars_ul.classList.add("details-ul");
+          cardData.stars.forEach((star) => {
+            const star_li = document.createElement("li");
+            const icon = document.createElement("ion-icon");
+            icon.setAttribute("class", star.class);
+            icon.setAttribute("name", star.name);
+            star_li.appendChild(icon);
+            stars_ul.appendChild(star_li);
+          });
+
+          const details_p = document.createElement("p");
+          details_p.classList.add("details-p");
+          details_p.textContent = cardData.description;
+          div.appendChild(h4);
+          div.appendChild(details_h3);
+          div.appendChild(stars_ul);
+          details_div.appendChild(div);
+          details_div.appendChild(details_p);
+
+          const relative_container = document.createElement("div");
+          relative_container.classList.add("relative-container");
+          const topic_div = document.createElement("div");
+          topic_div.classList.add("topic-of-card");
+
+          const imgCard = document.createElement("div");
+          imgCard.classList.add("topic-card-img");
+          const image = document.createElement("img");
+          image.src = cardData.image;
+          image.alt = cardData.topic;
+
+          imgCard.appendChild(image);
+
+          const favourite_information_div = document.createElement("div");
+          favourite_information_div.classList.add("favourite-information-div");
+
+          const divElement = document.createElement("div");
+          divElement.classList.add("p-h5-a-div", "gab");
+
+          const h5 = document.createElement("h5");
+          h5.textContent = cardData.topic;
+
+          const aElement = document.createElement("a");
+          aElement.href = "#"; // Set the href attribute to "#"
+          aElement.textContent = cardData.name;
+
+          divElement.appendChild(h5);
+          divElement.appendChild(document.createTextNode("by "));
+          divElement.appendChild(aElement);
+
+          const favourite_div = document.createElement("div");
+          favourite_div.classList.add("favourite-div");
+          const favourite_div_p = document.createElement("p");
+          favourite_div_p.textContent = "Interested about this topic?";
+          const favourite_div_div = document.createElement("div");
+          favourite_div_div.classList.add("flex", "add-to-favourite-div");
+          const addToFavouriteBtn = document.createElement("button");
+          addToFavouriteBtn.classList.add("flex", "gab", "btn");
+          addToFavouriteBtn.id = "add-to-favourite-btn";
+          const addSpan = document.createElement("span");
+          addSpan.classList.add("add-span");
+          addSpan.textContent = "Add to Favourites";
+
+          const icon = document.createElement("ion-icon");
+          icon.setAttribute("class", "fav-icon");
+          icon.setAttribute("name", "heart-outline");
+
+          const p2 = document.createElement("p");
+          p2.classList.add("add-to-favourite-bottom");
+          p2.textContent = "Unlimited Credits";
+
+          addToFavouriteBtn.appendChild(addSpan);
+          addToFavouriteBtn.appendChild(icon);
+
+          favourite_div_div.appendChild(addToFavouriteBtn);
+          favourite_div.appendChild(favourite_div_p);
+          favourite_div.appendChild(favourite_div_div);
+          favourite_div.appendChild(p2);
+
+          favourite_information_div.appendChild(divElement);
+          favourite_information_div.appendChild(favourite_div);
+
+          topic_div.appendChild(imgCard);
+          topic_div.appendChild(favourite_information_div);
+          relative_container.appendChild(topic_div);
+
+          details.appendChild(details_div);
+          details.appendChild(relative_container);
+        }
+      });
+  }
 });
