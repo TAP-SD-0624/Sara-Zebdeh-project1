@@ -21,7 +21,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": true
   },
   {
     "category": "Web Development Languages",
@@ -45,7 +46,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": true
   },
   {
     "category": "Web Development Languages",
@@ -69,7 +71,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Frontend Frameworks and Libraries",
@@ -93,7 +96,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Frontend Frameworks and Libraries",
@@ -117,7 +121,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Frontend Frameworks and Libraries",
@@ -143,7 +148,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": true
   },
   {
     "category": "Frontend Frameworks and Libraries",
@@ -169,7 +175,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -195,7 +202,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -221,7 +229,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -247,7 +256,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -274,7 +284,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -301,7 +312,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Databases and APIs",
@@ -328,7 +340,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Databases and APIs",
@@ -354,7 +367,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Databases and APIs",
@@ -381,7 +395,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Databases and APIs",
@@ -407,7 +422,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -431,7 +447,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -453,7 +470,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -475,7 +493,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -497,7 +516,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -519,7 +539,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -543,7 +564,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -567,7 +589,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -590,7 +613,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -613,7 +637,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -641,7 +666,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -664,7 +690,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -688,7 +715,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -711,7 +739,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -734,7 +763,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star-half" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -757,7 +787,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -781,7 +812,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -805,7 +837,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": true
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -827,7 +860,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -851,7 +885,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -876,7 +911,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -899,7 +935,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -916,7 +953,8 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",
@@ -939,6 +977,7 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
-    ]
+    ],
+    "isFavourite": false
   }
 ]
