@@ -1,5 +1,6 @@
 const body = document.querySelector("body");
-
+let courses = [];
+let favourites = [];
 const colorThemeBtn = document.getElementById("colorThemeBtn");
 const favoriteBtn = document.getElementById("favourites-click-btn");
 const favouritesDiv = document.querySelector(".favourites");
@@ -7,6 +8,40 @@ const favouritesDiv = document.querySelector(".favourites");
 const modeText = document.getElementById("mode_btn_text");
 const heartColor = document.getElementById("heart-icon-btn");
 const modeColor = document.getElementById("mode-icon-btn");
+
+const fetchCourses = async () => {
+  const response = await fetch("data.json");
+  return await response.json();
+};
+const saveToLocalStorage = () => {
+  localStorage.setItem("courses", JSON.stringify(courses));
+  localStorage.setItem("favourites", JSON.stringify(favourites));
+};
+
+// const loadFromLocalStorage = () => {
+//   const savedCourses = localStorage.getItem("courses");
+//   const savedFavourites = localStorage.getItem("favourites");
+
+//   if (savedCourses) {
+//     courses = JSON.parse(savedCourses);
+//   }
+//   if (savedFavourites) {
+//     favourites = JSON.parse(savedFavourites);
+//   }
+//   console.log("Loaded courses from local storage:", courses);
+//   console.log("Loaded favourites from local storage:", favourites);
+// };
+
+(async () => {
+    courses = JSON.parse(localStorage.getItem("cources")) || await fetchCourses();
+    favourites = JSON.parse(localStorage.getItem("cources")) || [...courses.filter((item) => item.isFavourite)];
+    saveToLocalStorage();
+
+  console.log(courses);
+  renderCardsOfFavouritesTopics(favourites);
+  renderDetailsPageForATopic(courses);
+  renderCardsOfTopics(courses);
+})();
 
 colorThemeBtn.addEventListener("click", () => {
   body.classList.contains("dark")
@@ -32,17 +67,6 @@ favoriteBtn.addEventListener("click", function () {
 
 colorThemeBtn.addEventListener("click", function () {
   modeColor.classList.toggle("clicked");
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const favouritesData = data;
-      renderCardsOfFavouritesTopics(favouritesData);
-      renderDetailsPageForATopic(favouritesData);
-      renderCardsOfTopics(data);
-    });
 });
 
 const renderCardsOfTopics = (data) => {
@@ -100,8 +124,10 @@ const renderCardsOfTopics = (data) => {
 
 const renderCardsOfFavouritesTopics = (data) => {
   const favouritesDiv = document.querySelector(".favourites-div");
-  const favouriteItems = data.filter((item) => item.isFavourite);
-  favouriteItems.forEach((item) => {
+  favouritesDiv.innerHTML = ""; // Clear current content
+
+  // const favouriteItems = data.filter((item) => item.isFavourite);
+  data.forEach((item) => {
     const topic_div = document.createElement("div");
     topic_div.classList.add("topic");
 
@@ -225,22 +251,25 @@ const renderDetailsPageForATopic = (data) => {
 
       // Add an event listener to the button to toggle the favourite status
       addToFavouriteBtn.addEventListener("click", () => {
-        // Toggle the isFavourite property
         cardData.isFavourite = !cardData.isFavourite;
+        courses = [
+          ...data.map((item) =>
+            item.id === selectedCardId
+              ? { ...item, isFavourite: !item.isFavourite }
+              : item
+          ),
+        ];
+
+        favourites = [...courses.filter((item) => item.isFavourite)];
+        console.log(favourites);
+        renderCardsOfFavouritesTopics(favourites);
+        saveToLocalStorage();
+        console.log(courses);
 
         // Update the button text
         addSpan.textContent = cardData.isFavourite
           ? "Remove from Favourites"
           : "Add to Favourites";
-
-        // Update the favouritesData array
-        const cardIndex = data.findIndex((card) => card.id == selectedCardId);
-        if (cardIndex !== -1) {
-          data[cardIndex].isFavourite = cardData.isFavourite;
-        }
-
-        renderCardsOfFavouritesTopics(data);
-        console.log(data);
       });
 
       const icon = document.createElement("ion-icon");
