@@ -7,6 +7,7 @@ const favouritesDiv = document.querySelector(".favourites");
 const modeText = document.getElementById("mode_btn_text");
 const heartColor = document.getElementById("heart-icon-btn");
 const modeColor = document.getElementById("mode-icon-btn");
+let data = [];
 
 colorThemeBtn.addEventListener("click", () => {
   body.classList.contains("dark")
@@ -221,7 +222,20 @@ document.addEventListener("DOMContentLoaded", () => {
           addToFavouriteBtn.id = "add-to-favourite-btn";
           const addSpan = document.createElement("span");
           addSpan.classList.add("add-span");
-          addSpan.textContent = "Add to Favourites";
+          addSpan.textContent = cardData.isFavourite
+            ? "Remove from Favourites"
+            : "Add to Favourites";
+
+          // Add an event listener to the button to toggle the favourite status
+          addToFavouriteBtn.addEventListener("click", () => {
+            // Toggle the isFavourite property
+            cardData.isFavourite = !cardData.isFavourite;
+
+            // Update the button text
+            addSpan.textContent = cardData.isFavourite
+              ? "Remove from Favourites"
+              : "Add to Favourites";
+          });
 
           const icon = document.createElement("ion-icon");
           icon.setAttribute("class", "fav-icon");
@@ -248,6 +262,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
           details.appendChild(details_div);
           details.appendChild(relative_container);
+
+          const sub_topics_div = document.querySelector(".sub-topics-div");
+          const sub_topic_div_h4 = document.createElement("div");
+          sub_topic_div_h4.classList.add("sub-topic");
+          const sub_topic_div_h4Element = document.createElement("h4");
+          sub_topic_div_h4Element.classList.add("sub-topics-h4");
+          sub_topic_div_h4Element.textContent = `${cardData.topic} Sub Topics`;
+          sub_topic_div_h4.appendChild(sub_topic_div_h4Element);
+          sub_topics_div.appendChild(sub_topic_div_h4);
+
+
+          cardData.subtopics.forEach((topic) => {
+            const sub_topic_div = document.createElement("div");
+            sub_topic_div.classList.add("sub-topic");
+            const sub_topic_button = document.createElement("button");
+            sub_topic_button.classList.add("flex", "gab", "btn");
+            const check_icon = document.createElement("ion-icon");
+            check_icon.setAttribute("class", "check-icon");
+            check_icon.setAttribute("name", "checkmark-circle-outline");
+            const sub_topic_addSpan = document.createElement("span");
+            sub_topic_addSpan.textContent = topic;
+            sub_topic_button.appendChild(check_icon);
+            sub_topic_button.appendChild(sub_topic_addSpan);
+            sub_topic_div.appendChild(sub_topic_button);
+            sub_topics_div.appendChild(sub_topic_div);
+          });
+          
         }
       });
   }
