@@ -18,8 +18,8 @@ main {
   overflow: auto;
   text-align: left;
   cursor: pointer;
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid var(--white-color);
+  background-color: var(--white-color);
   box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
     0 10px 10px var(--lines-color) (0, 0, 0, 0.05);
 }
@@ -46,10 +46,17 @@ ul {
   align-items: center;
 }
 
+.details-ul
 .star-filled,
 .star-outline {
-  color: #ff9f43;
-  background-color: #333333;
+  color: var(--star-color);
+  background-color: var(--bg_details);
+}
+
+.star-filled,
+.star-outline {
+  color: var(--star-color);
+  background-color: none;
 }
 
 .label {
@@ -89,27 +96,27 @@ ul {
 
 .details {
   width: 100%;
-  background-color: #333333;
+  background-color: var(--bg_details);
   gap: 1rem;
   position: relative;
 }
 
 h4 {
   color: var(--brand-secondary);
-  background-color: #333333;
+  background-color: var(--bg_details);
 }
 
 .details-ul {
-  background-color: #333333;
+  background-color: var(--bg_details);
 }
 .details-ul li {
-  background-color: #333333;
+  background-color: var(--bg_details);
 }
 
 .details-h3,
 .details-p {
-  color: white;
-  background-color: #333333;
+  color: var(--white-color);
+  background-color: var(--bg_details);
 }
 
 .details-div,
@@ -118,7 +125,7 @@ h4 {
 }
 
 .details-div {
-  background-color: #333333;
+  background-color: var(--bg_details);
   max-width: 535px;
   display: flex;
   flex-direction: column;
@@ -130,34 +137,34 @@ h4 {
   align-items: center;
   justify-content: left;
   margin-bottom: 10px;
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .p-h5-a-div h5 {
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .p-h5-a-div a {
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 .favourite-div {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--favourite-border);
   padding: 16px;
   align-items: center;
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 .favourite-information-div {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 16px;
 }
 
 .favourite-div p {
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .add-to-favourite-div {
@@ -168,7 +175,7 @@ h4 {
 }
 
 #add-to-favourite-btn {
-  color: white;
+  color: var(--white-color);
   background-color: var(--brand-secondary);
   padding: 8px;
 }

@@ -176,7 +176,7 @@
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": false
+    "isFavourite": true
   },
   {
     "category": "Backend Frameworks and Libraries",
