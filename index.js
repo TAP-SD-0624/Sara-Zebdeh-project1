@@ -18,30 +18,17 @@ const saveToLocalStorage = () => {
   localStorage.setItem("favourites", JSON.stringify(favourites));
 };
 
-// const loadFromLocalStorage = () => {
-//   const savedCourses = localStorage.getItem("courses");
-//   const savedFavourites = localStorage.getItem("favourites");
+const loadFromLocalStorage = () => {
+  const savedCourses = localStorage.getItem("courses");
+  const savedFavourites = localStorage.getItem("favourites");
 
-//   if (savedCourses) {
-//     courses = JSON.parse(savedCourses);
-//   }
-//   if (savedFavourites) {
-//     favourites = JSON.parse(savedFavourites);
-//   }
-//   console.log("Loaded courses from local storage:", courses);
-//   console.log("Loaded favourites from local storage:", favourites);
-// };
-
-(async () => {
-    courses = JSON.parse(localStorage.getItem("cources")) || await fetchCourses();
-    favourites = JSON.parse(localStorage.getItem("cources")) || [...courses.filter((item) => item.isFavourite)];
-    saveToLocalStorage();
-
-  console.log(courses);
-  renderCardsOfFavouritesTopics(favourites);
-  renderDetailsPageForATopic(courses);
-  renderCardsOfTopics(courses);
-})();
+  if (savedCourses) {
+    courses = JSON.parse(savedCourses);
+  }
+  if (savedFavourites) {
+    favourites = JSON.parse(savedFavourites);
+  }
+};
 
 colorThemeBtn.addEventListener("click", () => {
   body.classList.contains("dark")
@@ -253,7 +240,7 @@ const renderDetailsPageForATopic = (data) => {
       addToFavouriteBtn.addEventListener("click", () => {
         cardData.isFavourite = !cardData.isFavourite;
         courses = [
-          ...data.map((item) =>
+          ...courses.map((item) =>
             item.id === selectedCardId
               ? { ...item, isFavourite: !item.isFavourite }
               : item
@@ -325,3 +312,17 @@ const renderDetailsPageForATopic = (data) => {
     }
   }
 };
+
+(async () => {
+  loadFromLocalStorage();
+
+  if (courses.length === 0) {
+    courses = await fetchCourses();
+    favourites = [...courses.filter((item) => item.isFavourite)];
+    saveToLocalStorage();
+  }
+  console.log(courses);
+  renderCardsOfFavouritesTopics(favourites);
+  renderDetailsPageForATopic(courses);
+  renderCardsOfTopics(courses);
+})();

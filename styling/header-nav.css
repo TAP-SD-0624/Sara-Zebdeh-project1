@@ -11,14 +11,8 @@
   align-items: center;
   padding: 4.8px;
   color: var(--body-text);
-  cursor: pointer;
 }
 
-.btn {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
 
 .header {
   display: flex;
