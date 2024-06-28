@@ -52,5 +52,18 @@
     padding: 16px;
   }
 
+  .favourite-topic{
+      box-sizing: border-box;
+      float: left;
+      text-align: left;
+      border-radius: 16px;
+      cursor: pointer;
+      border: 1px solid var(--lines-color);
+      background-color: var(--bg_default);
+      overflow: hidden;
+      box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
+        0 10px 10px var(--lines-color) (0, 0, 0, 0.05);
+  }
+
   
  

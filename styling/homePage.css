@@ -26,7 +26,6 @@ main {
   text-align: left;
   border-radius: 16px;
   cursor: pointer;
-  border: 1px solid var(--lines-color);
   background-color: var(--bg_default);
   overflow: hidden;
   box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
@@ -42,6 +41,7 @@ main {
   justify-content: center;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  /* background-color: #dddddd; */
 }
 
 .information-for-topic {
@@ -55,12 +55,17 @@ main {
   object-fit: cover;
 }
 
+.select-label-container{
+  width: 100%;
+}
+
 .select {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-left: 1px solid var(--lines-color);
   align-items: flex-start;
+  width: 100%;
   min-width: 160px;
   padding: 8px;
 }

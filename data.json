@@ -22,7 +22,7 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": true
+    "isFavourite": false
   },
   {
     "category": "Web Development Languages",
@@ -47,7 +47,7 @@
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": true
+    "isFavourite": false
   },
   {
     "category": "Web Development Languages",
@@ -149,7 +149,7 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": true
+    "isFavourite": false
   },
   {
     "category": "Frontend Frameworks and Libraries",
@@ -176,7 +176,7 @@
       { "class": "star-filled", "name": "star-half" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": true
+    "isFavourite": false
   },
   {
     "category": "Backend Frameworks and Libraries",
@@ -838,7 +838,7 @@
       { "class": "star-filled", "name": "star" },
       { "class": "star-outline", "name": "star-outline" }
     ],
-    "isFavourite": true
+    "isFavourite": false
   },
   {
     "category": "Web Development Concepts and Technologies",

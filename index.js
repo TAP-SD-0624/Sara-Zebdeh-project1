@@ -13,6 +13,7 @@ const fetchCourses = async () => {
   const response = await fetch("data.json");
   return await response.json();
 };
+
 const saveToLocalStorage = () => {
   localStorage.setItem("courses", JSON.stringify(courses));
   localStorage.setItem("favourites", JSON.stringify(favourites));
@@ -39,6 +40,7 @@ colorThemeBtn.addEventListener("click", () => {
 colorThemeBtn.addEventListener("click", () => {
   if (modeText.innerText === "Dark Mode") {
     modeText.innerText = "Light Mode";
+
   } else {
     modeText.innerText = "Dark Mode";
   }
@@ -50,10 +52,16 @@ favoriteBtn.addEventListener("click", () => {
 
 favoriteBtn.addEventListener("click", function () {
   heartColor.classList.toggle("clicked");
+  heartColor.classList.contains("clicked")
+  ? heartColor.name = "heart"
+  : heartColor.name = "heart-outline"
 });
 
 colorThemeBtn.addEventListener("click", function () {
   modeColor.classList.toggle("clicked");
+  modeColor.classList.contains("clicked")
+  ? modeColor.name = "moon"
+  : modeColor.name = "moon-outline"
 });
 
 const renderCardsOfTopics = (data) => {
@@ -116,7 +124,7 @@ const renderCardsOfFavouritesTopics = (data) => {
   // const favouriteItems = data.filter((item) => item.isFavourite);
   data.forEach((item) => {
     const topic_div = document.createElement("div");
-    topic_div.classList.add("topic");
+    topic_div.classList.add("favourite-topic");
 
     const topic_img_div = document.createElement("div");
     topic_img_div.classList.add("topic-img", "favourites-topic-img");
