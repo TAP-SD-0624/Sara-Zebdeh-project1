@@ -80,6 +80,7 @@ const renderCardsOfTopics = (data) => {
     information_div.classList.add("information-for-topic");
 
     const topic_p = document.createElement("p");
+    topic_p.classList.add("topicCategory");
     topic_p.textContent = cardData.category;
 
     const topic_h3 = document.createElement("h3");

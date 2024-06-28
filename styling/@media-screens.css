@@ -100,6 +100,7 @@
   h2 {
     font-size: 1.15rem;
   }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -123,6 +124,13 @@
 @media screen and (max-width: 735px) {
   .details-div {
     max-width: 335px;
+  }
+
+  .details-div h4{
+    font-size: 0.8rem;
+  }
+  .details-div h3 {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 620px) {
@@ -158,8 +166,14 @@
   #filter {
     font-size: 0.85rem;
   }
-}
 
+  .details-div h4{
+    font-size: 0.8rem;
+  }
+  .details-div h3 {
+    font-size: 0.9rem;
+  }
+}
 
 @media screen and (max-width: 495px) {
   .details-div {
@@ -168,11 +182,53 @@
 }
 
 @media screen and (max-width: 470px) {
+  .p-h5-a-div {
+    display: none;
+  }
+
+  .relative-container {
+    min-width: 209px;
+  }
+
+  .topic-card-img {
+    height: 100px;
+  }
+
+  h4{
+    font-size: 0.7rem;
+  }
+  .details-div h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .details{
+    padding: 10px 0;
+  }
+
+  .relative-container {
+    min-width: 170px;
+  }
+
+  .favourite-div p {
+    display: none;
+  }
+
+  .favourite-div .btn ion-icon{
+    display: none;
+  }
+  h4{
+    font-size: 0.6rem;
+  }
+  .details-div h3 {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .details-div,
-  .relative-container{
+  .relative-container {
     max-width: 40%;
   }
 
@@ -199,6 +255,17 @@
   #sort,
   #filter {
     font-size: 0.8rem;
+  }
+
+  .details-div h4{
+    font-size: 0.7rem;
+  }
+  .details-div h3 {
+    font-size: 0.8rem;
+  }
+
+  .relative-container {
+    min-width: 230px;
   }
 }
 
