@@ -58,6 +58,7 @@
 
   .details {
     min-height: 360px;
+    align-items: baseline;
   }
 
   .empty-container {
@@ -253,6 +254,11 @@
     max-width: 40%;
   }
 
+  .relative-container,
+  .relative-container .add-span {
+    font-size: 12px;
+  }
+
   .welcome-box {
     transform: translateY(-5px);
   }
@@ -320,6 +326,11 @@
 @media screen and (max-width: 375px) {
   .relative-container {
     min-width: 170px;
+    font-size: 10px;
+  }
+
+  .relative-container .add-span {
+    font-size: 10px;
   }
 }
 
