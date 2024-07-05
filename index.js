@@ -122,9 +122,15 @@ const updateDisplayedContent = () => {
   renderCardsOfTopics(filteredCourses);
 };
 
-sortSelect.addEventListener("change", handleSort);
-filterSelect.addEventListener("change", handleFilter);
-searchInput.addEventListener("input", handleSearch);
+if (sortSelect) {
+  sortSelect.addEventListener("change", handleSort);
+}
+if (filterSelect) {
+  filterSelect.addEventListener("change", handleFilter);
+}
+if (searchInput) {
+  searchInput.addEventListener("input", handleSearch);
+}
 
 const renderCardsOfTopics = (data) => {
   const cardsContainer = document.querySelector(".topics-container");
