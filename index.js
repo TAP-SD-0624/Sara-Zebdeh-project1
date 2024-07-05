@@ -40,7 +40,6 @@ colorThemeBtn.addEventListener("click", () => {
 colorThemeBtn.addEventListener("click", () => {
   if (modeText.innerText === "Dark Mode") {
     modeText.innerText = "Light Mode";
-
   } else {
     modeText.innerText = "Dark Mode";
   }
@@ -53,23 +52,87 @@ favoriteBtn.addEventListener("click", () => {
 favoriteBtn.addEventListener("click", function () {
   heartColor.classList.toggle("clicked");
   heartColor.classList.contains("clicked")
-  ? heartColor.name = "heart"
-  : heartColor.name = "heart-outline"
+    ? (heartColor.name = "heart")
+    : (heartColor.name = "heart-outline");
 });
 
 colorThemeBtn.addEventListener("click", function () {
   modeColor.classList.toggle("clicked");
   modeColor.classList.contains("clicked")
-  ? modeColor.name = "moon"
-  : modeColor.name = "moon-outline"
+    ? (modeColor.name = "moon")
+    : (modeColor.name = "moon-outline");
 });
+
+const sortSelect = document.getElementById("sort");
+const filterSelect = document.getElementById("filter");
+const searchInput = document.querySelector(".search");
+
+let currentFilter = "default"; // Initialize with default filter
+let currentSortBy = "default"; // Initialize with default sort
+let currentSearchText = ""; // Initialize with empty search text
+
+const handleSort = () => {
+  currentSortBy = sortSelect.value;
+  updateDisplayedContent();
+};
+
+const handleFilter = () => {
+  currentFilter = filterSelect.value;
+  updateDisplayedContent();
+};
+
+const handleSearch = () => {
+  currentSearchText = searchInput.value.trim().toLowerCase();
+  updateDisplayedContent();
+};
+
+const updateDisplayedContent = () => {
+  let filteredCourses = [...courses];
+
+  // apply filter
+  if (currentFilter !== "default") {
+    filteredCourses = courses.filter(
+      (course) => course.category.trim() === currentFilter.trim()
+    );
+  }
+
+  // apply search
+  if (currentSearchText) {
+    filteredCourses = filteredCourses.filter(
+      (course) =>
+        course.topic.toLowerCase().includes(currentSearchText) ||
+        course.name.toLowerCase().includes(currentSearchText) ||
+        course.category.toLowerCase().includes(currentSearchText)
+    );
+  }
+
+  // apply sort
+  switch (currentSortBy) {
+    case "topic":
+      filteredCourses.sort((a, b) => a.topic.localeCompare(b.topic));
+      break;
+    case "name":
+      filteredCourses.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    default:
+      // Handle default sorting if needed
+      break;
+  }
+
+  renderCardsOfTopics(filteredCourses);
+};
+
+sortSelect.addEventListener("change", handleSort);
+filterSelect.addEventListener("change", handleFilter);
+searchInput.addEventListener("input", handleSearch);
 
 const renderCardsOfTopics = (data) => {
   const cardsContainer = document.querySelector(".topics-container");
+  cardsContainer.innerHTML = "";
   data.forEach((cardData) => {
     const card = document.createElement("div");
     card.classList.add("topic");
-
+    console.log(cardData.category);
     const imgCard = document.createElement("div");
     imgCard.classList.add("topic-img");
     const image = document.createElement("img");
