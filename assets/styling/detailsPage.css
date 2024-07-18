@@ -220,6 +220,13 @@ h4 {
   padding: 15px;
   width: 100%;
   border-bottom: 1px solid var(--lines-color);
+}
+
+.sub-topic:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.sub-topic:last-child {
   border-radius: 8px;
 }
 
@@ -243,4 +250,8 @@ h4 {
 .sub-topics-h4 {
   color: var(--body-text);
   background-color: var(--bg_default);
+}
+
+.sub-topic:last-child {
+  border-bottom: none;
 }
