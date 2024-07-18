@@ -132,6 +132,11 @@ li {
   background-color: var(--bg_body);
 }
 
+.selectors-box, .select:last-child{
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 8px;
+}
+
 .auther-p {
   color: gray;
 }
